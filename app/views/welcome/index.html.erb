@@ -1,0 +1,117 @@
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!--Smooth scrolling script-->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+$(function() {
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
+</script>
+-->
+<!--Top bar-->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+        	<li><%= link_to 'Mentanina'%></li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+    	<ul class="menu">
+        	<li><a href="#">Sobre</a></li>
+      	</ul>
+    </div>
+</div>
+
+<!--BG video-->
+<video autoplay loop muted poster="vid-first-frame.jpg" style="position: fixed;right: 0;bottom: 0;width: auto;min-width: 100%;height: auto;min-height: 100%;z-index: -100;background: transparent url(video-bg.jpg) no-repeat;background-size: cover;">
+<source src="/videos/bg.webm" type="video/webm">
+<source src="/videos/bg.mp4" type="video/mp4">
+</video>
+
+<!--First callout-->
+<div class="callout large" style="height: 90%; background: transparent;" id="callout-topo">
+	<div style="text-align: center;position:absolute;bottom:28%;left:0;right:0">
+		<h1>Olá!</h1>
+		<p>Bem vindo ao Mentanina</p>
+		<div class="row">
+			<div class="small-12 columns small-centered"
+				<div class="button-group">
+					<a href="#entenda" class="button success large">Entenda Mais</a>
+					<a href="#inscreva-se" class="button success large">Inscreva-se</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Second callout-->
+<div class="callout large primary" style="height: 100%;" id="entenda">
+	<div style="text-align: center;position:absolute;top:20%;left:0;right:0">
+		<p>Olá!<br>funciona em 3 passos:</p>
+		<div class="row">
+			<div class="small-12 medium-8 large-8 small-centered columns">
+				<ul class="tabs" data-tabs id="passos-tabs">
+				        <li class="tabs-title is-active"><a href="#Conscientize-se" style="font-size: 110%">Conscientize-se</a></li>
+				        <li class="tabs-title"><a href="#Aprenda" style="font-size: 110%">Aprenda</a></li>
+				        <li class="tabs-title"><a href="#Compartilhe" style="font-size: 110%">Compartilhe</a></li>
+			    </ul>
+				<div class="tabs-content" data-tabs-content="passos-tabs" style="color:black">
+					<div class="tabs-panel is-active" id="Conscientize-se">
+					ehehhehehe
+					</div>
+					<div class="tabs-panel" id="Aprenda">
+					fdsfs
+					</div>
+					<div class="tabs-panel" id="Compartilhe">
+					sdf yfgd
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Third callout-->
+<div class="callout large success" style="height: 60%" id="inscreva-se">
+<!-- Begin MailChimp Signup Form -->
+	<div id="mc_embed_signup">
+		<form action="//mentanina.us12.list-manage.com/subscribe/post?u=8746979b45f92cbef72bb72d2&amp;id=cc2824528d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+				<div class="large-6 medium-10 small-12 small-centered columns">
+					<div class="input-group">
+						<input type="email" value="" name="EMAIL" class="email input-group-field" id="mce-EMAIL" placeholder="Digita teu email. Não mandamos spam ;)" required>
+					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8746979b45f92cbef72bb72d2_cc2824528d" tabindex="-1" value=""></div>
+					    <div class="input-group-button"><div class="clear"><input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 0px;"></div></div>
+					</div>
+				</div>
+		    </div>
+		</form>
+	</div>
+<!--End mc_embed_signup-->
+</div>
+
+<!--Footer callout-->
+<div class="callout primary" id="callout-footer">
+<br>
+</div>
+<div class="callout large success" style="height: 40%" id="callout-footer">
+	<div style="position:absolute;bottom:0">
+	feito por mim
+	</div>
+</div>
+
+<!-- <%= link_to 'My Blog', controller: 'articles' %> -->

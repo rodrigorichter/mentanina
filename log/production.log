@@ -1,0 +1,7 @@
+D, [2016-02-18T23:30:44.545939 #22095] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-02-18T23:30:44.551027 #22095]  INFO -- : Migrating to CreateTasks (20160219013036)
+D, [2016-02-18T23:30:44.551590 #22095] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-02-18T23:30:44.562463 #22095] DEBUG -- :   [1m[36m (9.2ms)[0m  [1mCREATE TABLE "tasks" ("id" serial primary key, "title" character varying, "note" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2016-02-18T23:30:44.577530 #22095] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160219013036"]]
+D, [2016-02-18T23:30:44.579261 #22095] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+D, [2016-02-18T23:33:12.225587 #22354] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
