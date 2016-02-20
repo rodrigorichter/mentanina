@@ -34,19 +34,19 @@ $(function() {
 </div>
 
 <!--BG video-->
-<video autoplay loop muted poster="vid-first-frame.jpg" style="position: fixed;right: 0;bottom: 0;width: auto;min-width: 100%;height: auto;min-height: 100%;z-index: -100;background: transparent url(video-bg.jpg) no-repeat;background-size: cover;">
+<video autoplay loop muted style="position: fixed;right: 0;bottom: 0;width: auto;min-width: 100%;height: auto;min-height: 100%;z-index: -100;background: transparent url(video-bg.jpg) no-repeat;background-size: cover;">
 <source src="/videos/bg.webm" type="video/webm">
 <source src="/videos/bg.mp4" type="video/mp4">
 </video>
 
 <!--First callout-->
-<div class="callout large" style="height: 100%; background: transparent;" id="callout-topo">
-	<div style="text-align: center;position:absolute;top:38%;left:0;right:0">
+<div class="callout large" style="height: 900px; background: transparent;" id="callout-topo">
+	<div style="text-align: center;position:absolute;top:300px;left:0;right:0">
 		<h1>Mentanina</h1>
 		<h4>Um agregador de links e uma comunidade sobre saúde mental.</h4><br><br>
 		<div class="row">
 			<div class="small-12 small-centered columns">
-					<a href="#entenda" class="button success large smooth">Entenda Mais</a>
+					<a href="#features" class="button success large smooth">Entenda Mais</a>
 					<a href="#inscreva-se" class="button success large smooth">Inscreva-se</a>
 			</div>
 		</div>
@@ -54,15 +54,70 @@ $(function() {
 </div>
 
 <!--Second callout-->
-<div class="callout large primary" style="height: 100%;" id="entenda">
-	<div style="text-align: center;position:absolute;top:20%;left:0;right:0">
-		<p>Olá!<br>funciona em 3 passos:</p>
+<div class="callout large success" style="height: 900px" id="features">
+	<div style="text-align: center;position:absolute;top:200px;left:0;right:0;color:black">
+		<div class="row">
+			<div class="small-10 small-centered columns">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<div class="media-object" style="text-align:left">
+        							<div class="media-object-section middle">
+						         		 <i class="fa fa-link fa-5x"></i>
+						        	</div>
+						       		<div class="media-object-section">
+						          		<h3>Agregador de links</h3>
+						          		<p>Nós disponibilizamos centenas de links contendo artigos, livros, documentários, palestras e filmes sobre saúde mental.</p>
+						        	</div>
+						      	</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="media-object" style="text-align:left">
+        							<div class="media-object-section middle">
+						         		 <i class="fa fa-user-secret fa-5x"></i>
+						        	</div>
+						       		<div class="media-object-section">
+						          		<h3>Uma comunidade anônima</h3>
+						          		<p>Acreditamos que o anonimato ajuda as pessoas a se abrirem sobre seus problemas. Nos importamos muito com a sua privacidade, e não possuímos nenhum sistema de cadastro. Nenhum dado pessoal é requisitado.</p>
+						        	</div>
+						      	</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="media-object" style="text-align:left">
+        							<div class="media-object-section middle">
+						         		 <i class="fa fa-hourglass-half fa-5x"></i>
+						        	</div>
+						       		<div class="media-object-section">
+						          		<h3>Feito para durar</h3>
+						          		<p>A Mentanina sempre estará aqui. Todos os relatos dos usuários são armazenados em um banco de dados em um servidor remoto. Desse jeito, eles sempre estarão salvos e disponíveis para quem precisa.</p>
+						        	</div>
+						      	</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#entenda" class="smooth"><i class="fa fa-arrow-circle-down fa-4x" style="position:absolute;bottom:-100px;color:white"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--Third callout-->
+<div class="callout large primary" style="height: 900px;" id="entenda">
+	<div style="text-align: center;position:absolute;top:200px;left:0;right:0">
 		<div class="row">
 			<div class="small-12 medium-8 large-8 small-centered columns">
+				<p>Só teoria não adianta. Acreditamos que atitudes práticas são fundamentais para o entendimento de problemas de saúde mental. Por isso, separamos essas atitudes em três ações:</p><br><br>
 				<ul class="tabs" data-tabs id="passos-tabs">
-				        <li class="tabs-title is-active"><a href="#Conscientize-se" style="font-size: 110%">Conscientize-se</a></li>
-				        <li class="tabs-title"><a href="#Aprenda" style="font-size: 110%">Aprenda</a></li>
-				        <li class="tabs-title"><a href="#Compartilhe" style="font-size: 110%">Compartilhe</a></li>
+				        <li class="tabs-title is-active"><a href="#Conscientize-se" style="font-size: 110%"><i class="fa fa-warning fa-lg"></i>&nbsp; Conscientize-se</a></li>
+				        <li class="tabs-title"><a href="#Aprenda" style="font-size: 110%"><i class="fa fa-link fa-lg"></i>&nbsp; Aprenda</a></li>
+				        <li class="tabs-title"><a href="#Compartilhe" style="font-size: 110%"><i class="fa fa-users fa-lg"></i>&nbsp; Compartilhe</a></li>
 			    </ul>
 				<div class="tabs-content" data-tabs-content="passos-tabs" style="color:black">
 					<div class="tabs-panel is-active" id="Conscientize-se">
@@ -80,24 +135,28 @@ $(function() {
 	</div>
 </div>
 
-<!--Third callout-->
-<div class="callout large success" style="height: 60%" id="inscreva-se">
+<!--Fourth callout-->
+<div class="callout large success" style="height: 500px" id="inscreva-se">
+	<div style="text-align: center;position:absolute;top:100px;left:0;right:0">
 <!-- Begin MailChimp Signup Form -->
-	<div id="mc_embed_signup">
-		<form action="//mentanina.us12.list-manage.com/subscribe/post?u=8746979b45f92cbef72bb72d2&amp;id=cc2824528d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		    <div id="mc_embed_signup_scroll">
-				<div class="large-6 medium-10 small-12 small-centered columns">
-					<div class="input-group">
-						<input type="email" value="" name="EMAIL" class="email input-group-field" id="mce-EMAIL" placeholder="Digita teu email. Não mandamos spam ;)" required>
-					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8746979b45f92cbef72bb72d2_cc2824528d" tabindex="-1" value=""></div>
-					    <div class="input-group-button"><div class="clear"><input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 0px;"></div></div>
+		<div id="mc_embed_signup">
+			<form action="//mentanina.us12.list-manage.com/subscribe/post?u=8746979b45f92cbef72bb72d2&amp;id=cc2824528d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+					<div class="large-6 medium-10 small-12 small-centered columns">
+					<p>Estamos trabalhando muito nos nossos escritórios(na verdade é só uma pessoa no computador de casa) para lançar o serviço o mais rápido possível.<br><br>Quer ficar sabendo quando ficará pronto? Te inscreve na nossa lista de emails! E nem te preocupa, não mandamos spam.</p>
+					<br>
+						<div class="input-group">
+							<input type="email" value="" name="EMAIL" class="email input-group-field" id="mce-EMAIL" placeholder="Digita teu email. Não mandamos spam ;)" required>
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8746979b45f92cbef72bb72d2_cc2824528d" tabindex="-1" value=""></div>
+						    <div class="input-group-button"><div class="clear"><input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 0px;"></div></div>
+						</div>
 					</div>
-				</div>
-		    </div>
-		</form>
-	</div>
+			    </div>
+			</form>
+		</div>
 <!--End mc_embed_signup-->
+	</div>
 </div>
 
 <!--Footer callout-->

@@ -52,4 +52,6 @@ gem 'foundation-icons-sass-rails'
 gem 'pg'
 gem 'puma'
 gem 'rails_12factor'
+gem "font-awesome-rails"
+
 ruby '2.2.1'
