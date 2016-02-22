@@ -76,4 +76,12 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # CUSTOM SETTINGS
+
+  config.action_controller.asset_host = 'stormy-hamlet-97195.herokuapp.com'
+  config.assets.paths << Rails.root.join(‘app’, ‘assets’, ‘fonts’)
+  config.assets.precompile += %w(.svg .eot .woff .ttf)
+
+
 end
