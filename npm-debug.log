@@ -1,0 +1,222 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '--save',
+1 verbose cli   'bower' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'bower', null ]
+6 verbose cache add name=undefined spec="bower" args=["bower",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bower',
+7 verbose parsed url   path: 'bower',
+7 verbose parsed url   href: 'bower' }
+8 silly lockFile 206e3ce5-bower bower
+9 verbose lock bower /home/rodrigo/.npm/206e3ce5-bower.lock
+10 silly lockFile 206e3ce5-bower bower
+11 silly lockFile 206e3ce5-bower bower
+12 verbose addNamed [ 'bower', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 1240aab1-bower bower@
+15 verbose lock bower@ /home/rodrigo/.npm/1240aab1-bower.lock
+16 silly addNameRange { name: 'bower', range: '*', hasData: false }
+17 verbose request where is /bower
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id aeb0fb6ebf344cea
+20 verbose url raw /bower
+21 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+22 verbose url resolved https://registry.npmjs.org/bower
+23 verbose request where is https://registry.npmjs.org/bower
+24 info trying registry request attempt 1 at 23:33:21
+25 verbose etag "BHSNNYX1IFIA3IMTOAYTLL489"
+26 http GET https://registry.npmjs.org/bower
+27 http 304 https://registry.npmjs.org/bower
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Tue, 23 Feb 2016 02:33:27 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'cache-control': 'max-age=300',
+28 silly registry.get     etag: '"BHSNNYX1IFIA3IMTOAYTLL489"',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-jfk1043-JFK',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1456194807.106306,VS0,VE21',
+28 silly registry.get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/bower from cache
+30 silly addNameRange number 2 { name: 'bower', range: '*', hasData: true }
+31 silly addNameRange versions [ 'bower',
+31 silly addNameRange   [ '0.1.0',
+31 silly addNameRange     '0.1.2',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.3.1',
+31 silly addNameRange     '0.3.2',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.6.1',
+31 silly addNameRange     '0.6.2',
+31 silly addNameRange     '0.6.3',
+31 silly addNameRange     '0.6.4',
+31 silly addNameRange     '0.6.5',
+31 silly addNameRange     '0.6.6',
+31 silly addNameRange     '0.6.7',
+31 silly addNameRange     '0.6.8',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.7.1',
+31 silly addNameRange     '0.8.0',
+31 silly addNameRange     '0.8.1',
+31 silly addNameRange     '0.8.2',
+31 silly addNameRange     '0.8.3',
+31 silly addNameRange     '0.8.4',
+31 silly addNameRange     '0.8.5',
+31 silly addNameRange     '0.8.6',
+31 silly addNameRange     '0.9.0',
+31 silly addNameRange     '0.9.1',
+31 silly addNameRange     '0.9.2',
+31 silly addNameRange     '0.10.0',
+31 silly addNameRange     '1.0.0',
+31 silly addNameRange     '1.0.1',
+31 silly addNameRange     '1.0.2',
+31 silly addNameRange     '1.0.3',
+31 silly addNameRange     '1.1.0',
+31 silly addNameRange     '1.1.1',
+31 silly addNameRange     '1.1.2',
+31 silly addNameRange     '1.2.0',
+31 silly addNameRange     '1.2.1',
+31 silly addNameRange     '1.2.2',
+31 silly addNameRange     '1.2.3',
+31 silly addNameRange     '1.2.4',
+31 silly addNameRange     '1.2.5',
+31 silly addNameRange     '1.2.6',
+31 silly addNameRange     '1.2.7',
+31 silly addNameRange     '1.2.8',
+31 silly addNameRange     '1.3.0',
+31 silly addNameRange     '1.3.1',
+31 silly addNameRange     '1.3.2',
+31 silly addNameRange     '1.3.3',
+31 silly addNameRange     '1.3.4',
+31 silly addNameRange     '1.3.5',
+31 silly addNameRange     '1.3.6',
+31 silly addNameRange     '1.3.7',
+31 silly addNameRange     '1.3.8',
+31 silly addNameRange     '1.3.9',
+31 silly addNameRange     '1.3.10',
+31 silly addNameRange     '1.3.11',
+31 silly addNameRange     '1.3.12',
+31 silly addNameRange     '1.4.0',
+31 silly addNameRange     '1.4.1',
+31 silly addNameRange     '1.5.0',
+31 silly addNameRange     '1.5.1',
+31 silly addNameRange     '1.5.2',
+31 silly addNameRange     '1.5.3',
+31 silly addNameRange     '1.6.2',
+31 silly addNameRange     '1.6.3',
+31 silly addNameRange     '1.6.4',
+31 silly addNameRange     '1.6.5',
+31 silly addNameRange     '1.5.4',
+31 silly addNameRange     '1.4.2',
+31 silly addNameRange     '1.6.6',
+31 silly addNameRange     '1.6.7',
+31 silly addNameRange     '1.6.8',
+31 silly addNameRange     '1.6.9',
+31 silly addNameRange     '1.7.0',
+31 silly addNameRange     '1.7.1',
+31 silly addNameRange     '1.7.2',
+31 silly addNameRange     '1.7.5',
+31 silly addNameRange     '1.7.6',
+31 silly addNameRange     '1.7.7' ] ]
+32 verbose addNamed [ 'bower', '1.7.7' ]
+33 verbose addNamed [ '1.7.7', '1.7.7' ]
+34 silly lockFile 8acd7280-bower-1-7-7 bower@1.7.7
+35 verbose lock bower@1.7.7 /home/rodrigo/.npm/8acd7280-bower-1-7-7.lock
+36 silly lockFile 8acd7280-bower-1-7-7 bower@1.7.7
+37 silly lockFile 8acd7280-bower-1-7-7 bower@1.7.7
+38 silly lockFile 1240aab1-bower bower@
+39 silly lockFile 1240aab1-bower bower@
+40 silly resolved [ { name: 'bower',
+40 silly resolved     version: '1.7.7',
+40 silly resolved     description: 'The browser package manager',
+40 silly resolved     author: { name: 'Twitter' },
+40 silly resolved     license: 'MIT',
+40 silly resolved     repository: { type: 'git', url: 'git+https://github.com/bower/bower.git' },
+40 silly resolved     main: 'lib',
+40 silly resolved     bin: { bower: 'bin/bower' },
+40 silly resolved     homepage: 'http://bower.io',
+40 silly resolved     engines: { node: '>=0.10.0' },
+40 silly resolved     keywords: [ 'bower' ],
+40 silly resolved     files: [ 'bin', 'lib' ],
+40 silly resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+40 silly resolved     _id: 'bower@1.7.7',
+40 silly resolved     scripts: {},
+40 silly resolved     _shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+40 silly resolved     _from: 'bower@',
+40 silly resolved     _npmVersion: '3.5.3',
+40 silly resolved     _nodeVersion: '4.1.1',
+40 silly resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+40 silly resolved     dist:
+40 silly resolved      { shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+40 silly resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.7.7.tgz' },
+40 silly resolved     maintainers:
+40 silly resolved      [ [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object] ],
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.7.7.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install bower@1.7.7 into /usr/lib
+42 info installOne bower@1.7.7
+43 verbose lib/node_modules/bower unbuild
+44 verbose tar unpack /home/rodrigo/.npm/bower/1.7.7/package.tgz
+45 silly lockFile 6f53a3f9-tar-usr-lib-node-modules-bower tar:///usr/lib/node_modules/bower
+46 verbose lock tar:///usr/lib/node_modules/bower /home/rodrigo/.npm/6f53a3f9-tar-usr-lib-node-modules-bower.lock
+47 silly lockFile 2f5e68d1-rigo-npm-bower-1-7-7-package-tgz tar:///home/rodrigo/.npm/bower/1.7.7/package.tgz
+48 verbose lock tar:///home/rodrigo/.npm/bower/1.7.7/package.tgz /home/rodrigo/.npm/2f5e68d1-rigo-npm-bower-1-7-7-package-tgz.lock
+49 silly gunzTarPerm modes [ '775', '664' ]
+50 error Error: EACCES, mkdir '/usr/lib/node_modules/bower'
+50 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/bower']
+50 error   errno: 3,
+50 error   code: 'EACCES',
+50 error   path: '/usr/lib/node_modules/bower',
+50 error   fstream_type: 'Directory',
+50 error   fstream_path: '/usr/lib/node_modules/bower',
+50 error   fstream_class: 'DirWriter',
+50 error   fstream_stack:
+50 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+50 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+50 error      'Object.oncomplete (fs.js:108:15)' ] }
+51 error Please try running this command again as root/Administrator.
+52 error System Linux 3.19.0-51-generic
+53 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "--save" "bower"
+54 error cwd /home/rodrigo/dev/mentanina
+55 error node -v v0.10.37
+56 error npm -v 1.4.28
+57 error path /usr/lib/node_modules/bower
+58 error fstream_path /usr/lib/node_modules/bower
+59 error fstream_type Directory
+60 error fstream_class DirWriter
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, mkdir '/usr/lib/node_modules/bower'
+64 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+64 error fstream_stack Object.oncomplete (fs.js:108:15)
+65 verbose exit [ 3, true ]

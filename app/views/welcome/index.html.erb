@@ -1,43 +1,30 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
-<!--Smooth scrolling script. Add smooth class to link to apply it-->
-<script>
-$(function() {
-  $('a[href*="#"].smooth:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+<!--Background-->
+<div data-interchange="[/images/bg_small.html, small], [/images/bg_small.html, medium], [/videos/bg_large.html, large]"></div>
 
+<div class="reveal" id="emailform" data-reveal>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h1>se inscrevaaa</h1>
+</div>
 <!--Top bar-->
 <div class="top-bar">
 	<div class="top-bar-title">~icone do saite~</div>
     <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
         	<li><%= link_to 'Mentanina'%></li>
+
         </ul>
     </div>
     <div class="top-bar-right">
     	<ul class="menu">
         	<li><a href="#">Sobre</a></li>
+        	<li><a data-open="emailform">Inscreva-se</a></li>
       	</ul>
     </div>
 </div>
-
-<!--BG video-->
-<video autoplay loop muted style="position: fixed;right: 0;bottom: 0;width: auto;min-width: 100%;height: auto;min-height: 100%;z-index: -100;background: transparent url(video-bg.jpg) no-repeat;background-size: cover;">
-<source src="/videos/bg.webm" type="video/webm">
-<source src="/videos/bg.mp4" type="video/mp4">
-</video>
 
 <!--First callout-->
 <div class="callout large" style="height: 900px; background: transparent;" id="callout-topo">
@@ -168,5 +155,24 @@ $(function() {
 	feito por mim
 	</div>
 </div>
+
+
+<!--Smooth scrolling script. Add smooth class to link to apply it-->
+<script>
+$(function() {
+  $('a[href*="#"].smooth:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 <!-- <%= link_to 'My Blog', controller: 'articles' %> -->
