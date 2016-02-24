@@ -20,11 +20,13 @@ The app was founded when I(the founder) decided that I could and should do somet
 * [Install Puma and Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04)
 * [Install Heroku Toolbelt](https://toolbelt.heroku.com/)
 * [Install and deploy to Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
-* [Set Puma as default webserver on Heroku](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server)
+* [Set Puma as default webserver on Heroku](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server)(set env to production on puma.rb config file)
 
 ## Usage
 
 Type `bin/rails server` for the default server for testing locally. The website will be up at localhost:3000.
+
+Before deploying to heroku, type `RAILS_ENV=production rake assets:precompile` to avoid assets not being loaded.
 
 ## Contributors
 
