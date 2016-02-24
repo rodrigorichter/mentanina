@@ -15,12 +15,12 @@ The app was founded when I(the founder) decided that I could and should do somet
 * Clone the repo: create a folder named whatever you like and type `git clone git@github.com:rrrichter/mentanina.git`
 
 **Installation**
-* [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04).
+* [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04). Note that you have to configure your own environment variables.
 * [Install PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
 * [Install Puma and Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04)
 * [Install Heroku Toolbelt](https://toolbelt.heroku.com/)
 * [Install and deploy to Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
-* [Set Puma as default webserver on Heroku](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server)(set env to production on puma.rb config file)
+* [Set Puma as default webserver on Heroku](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server). (set env to production on puma.rb config file)
 
 ## Usage
 
