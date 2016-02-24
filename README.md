@@ -10,10 +10,11 @@ The app was founded when I(the founder) decided that I could and should do somet
 
 ## Installation
 
-** Pre-installation(for newbies) **
+**Pre-installation(for newbies)**
 * Install git: `sudo apt-get install git`
+* Clone the repo: Create a dev or git folder and type `git clone git@github.com:rrrichter/mentanina.git`
 
-** Installation **
+**Installation**
 * [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04)
 * [Install PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
 * [Install Puma and Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04)
@@ -21,40 +22,20 @@ The app was founded when I(the founder) decided that I could and should do somet
 * [Install and deploy to Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
 * [Set Puma as default webserver on Heroku](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server)
 
+## Usage
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
+Type `bin/rails server` for the default server for testing locally. The website will be up at localhost:3000.
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+This project is being developed with the contribution of the following people:
+* [Rodrigo Richter](http://inf.ufrgs.br/~rrrichter)
+* Valentina Osório
 
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
-
-
-outra referencia
+Please feel free to contribute in any way you want. You can fork us or leave feedback opening a new Issue.
 
 
-# Project Name
-
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
-
-## Contributing
+How to contribute?
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -62,14 +43,6 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
 ## License
 
-TODO: Write license
+The app is released under the [MIT license](https://github.com/rrrichter/mentanina/blob/master/LICENSE.txt).
