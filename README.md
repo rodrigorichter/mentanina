@@ -12,10 +12,10 @@ The app was founded when I(the founder) decided that I could and should do somet
 
 **Pre-installation(for newbies)**
 * Install git: `sudo apt-get install git`
-* Clone the repo: Create a dev or git folder and type `git clone git@github.com:rrrichter/mentanina.git`
+* Clone the repo: create a folder named whatever you like and type `git clone git@github.com:rrrichter/mentanina.git`
 
 **Installation**
-* [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04)
+* [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04).
 * [Install PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
 * [Install Puma and Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04)
 * [Install Heroku Toolbelt](https://toolbelt.heroku.com/)
@@ -34,9 +34,7 @@ This project is being developed with the contribution of the following people:
 
 Please feel free to contribute in any way you want. You can fork us or leave feedback opening a new Issue.
 
-
-How to contribute?
-
+How to submit a pull request:
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
