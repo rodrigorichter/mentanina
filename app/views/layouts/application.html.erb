@@ -30,16 +30,18 @@
     <div class="off-canvas-wrapper">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
+      <div style="position:fixed;z-index:100;width:100%;box-shadow: 0px 1px 3px rgba(0,0,0,0.5);">
+
         <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium" style="background-color: rgb(51,37,50)">
           <div style="text-align:center">
-            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+            <div class="menu-icon" type="button" data-open="offCanvasLeft"></div>
             <%= link_to 'Mentanina', welcome_index_path %>
           </div>
         </div>
 
         <!-- off-canvas left menu -->
-        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas style="background-color: red;height:100%">
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas style="background-color: rgb(100,77,82);height:100%;position:fixed;">
           <ul class="vertical dropdown menu" data-dropdown-menu>
             
             <li><a href="#">Sobre</a></li>
@@ -48,7 +50,7 @@
         </div>
 
         <!-- "wider" top-bar menu for 'medium' and up -->
-        <div class="top-bar" id="widemenu" style="position:fixed;z-index:100;width:100%;box-shadow: 0px 1px 3px rgba(0,0,0,0.5);">
+        <div class="top-bar" id="widemenu">
           <div class="top-bar-left">
             <ul class="menu">
               <li><i class="fa fa-link fa-3x"></i></li>
@@ -62,6 +64,7 @@
               </ul>
           </div>
         </div>
+      </div>
 
         <!-- original content goes in this container -->
         <div class="off-canvas-content" data-off-canvas-content style="background-color: transparent">
