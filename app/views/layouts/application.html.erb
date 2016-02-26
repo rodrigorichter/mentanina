@@ -28,53 +28,51 @@
 
     <!--Top Bar-->
     <div class="off-canvas-wrapper">
-  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <!-- off-canvas title bar for 'small' screen -->
-    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-      <div style="text-align:center">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-        <%= link_to 'Mentanina', welcome_index_path %>
-      </div>
-    </div>
+        <!-- off-canvas title bar for 'small' screen -->
+        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+          <div style="text-align:center">
+            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+            <%= link_to 'Mentanina', welcome_index_path %>
+          </div>
+        </div>
 
-    <!-- off-canvas left menu -->
-    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas style="background-color: red;height:100%">
-      <ul class="vertical dropdown menu" data-dropdown-menu>
-        
-        <li><a href="#">Sobre</a></li>
-        <li><a data-open="emailform">Inscreva-se</a></li>
-      </ul>
-    </div>
-
-    <!-- "wider" top-bar menu for 'medium' and up -->
-    <div class="top-bar" id="widemenu">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li><i class="fa fa-link fa-3x" style="color:white"></i></li>
-          <li><%= link_to 'Mentanina', welcome_index_path %></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
+        <!-- off-canvas left menu -->
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas style="background-color: red;height:100%">
+          <ul class="vertical dropdown menu" data-dropdown-menu>
+            
             <li><a href="#">Sobre</a></li>
             <li><a data-open="emailform">Inscreva-se</a></li>
           </ul>
-      </div>
-    </div>
+        </div>
 
-    <!-- original content goes in this container -->
-    <div class="off-canvas-content" data-off-canvas-content style="background-color: transparent">
+        <!-- "wider" top-bar menu for 'medium' and up -->
+        <div class="top-bar" id="widemenu" style="position:fixed;z-index:100;width:100%;box-shadow: 0px 1px 3px rgba(0,0,0,0.5);">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li><i class="fa fa-link fa-3x"></i></li>
+              <li><%= link_to 'Mentanina', welcome_index_path %></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a data-open="emailform">Inscreva-se</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- original content goes in this container -->
+        <div class="off-canvas-content" data-off-canvas-content style="background-color: transparent">
           <!--Yield renders the view of the page-->
           <%= yield %>
         </div>
 
-        
-
-
+      
         <!--Footer callout-->
         <div class="callout primary" id="callout-footer">
-        <br>
+          <br>
         </div>
         <div class="callout large success" style="height: 40%" id="callout-footer">
           <div style="position:absolute;bottom:0">
@@ -92,7 +90,7 @@
               if (target.length) {
                 $('html, body').animate({
                   scrollTop: target.offset().top
-                }, 1000);
+                }, 500);
                 return false;
               }
             }
