@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "Mentanina" %></title>
-
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -15,8 +14,38 @@
 
   <body>
 
-    <!--Background-->
-    <div data-interchange="[/images/bg_small.html, small], [/images/bg_small.html, medium], [/videos/bg_large.html, large]"></div>
+    <!--Small top bar-->
+    <div class="top-bar" data-responsive-toggle="widemenu" data-hide-for="medium" style="background-color: rgb(51,37,50)">
+      <div style="text-align:center">
+        <ul class="vertical menu" data-accordion-menu>
+          <li>
+            <a href="#" style="font-size:40px;color:white"><i class="fa fa-bars"></i></a>
+            <ul class="menu vertical" style="font-size: 18px;color:white"><br>
+              <li><a href="/welcome/index">Mentanina</a></li><br>
+              <li><a href="#">Item 1B</a></li><br>
+            </ul>
+          </li>
+      </ul>
+      </div>
+    </div>
+    
+    <!-- Large top bar -->
+    <div class="top-bar" id="widemenu">
+    <ul class="vertical menu" data-accordion-menu>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><i class="fa fa-link fa-3x"></i></li>
+          <li><a href="/welcome/index">Mentanina</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Sobre</a></li>
+          <li><a data-open="emailform">Inscreva-se</a></li>
+          </ul>
+      </div>
+      </ul>
+    </div>
 
     <div class="reveal" id="emailform" data-reveal>
       <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -25,84 +54,39 @@
         <h1>se inscrevaaa</h1>
     </div>
 
+    <!--Background-->
+    <div data-interchange="[/images/bg_small.html, small], [/images/bg_small.html, medium], [/videos/bg_large.html, large]"></div>
 
-    <!--Top Bar-->
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <!--Renders the view-->
+    <%= yield %>
 
-      <div style="position:fixed;z-index:100;width:100%;box-shadow: 0px 1px 3px rgba(0,0,0,0.5);">
-
-        <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium" style="background-color: rgb(51,37,50)">
-          <div style="text-align:center">
-            <div class="menu-icon" type="button" data-open="offCanvasLeft"></div>
-            <%= link_to 'Mentanina', welcome_index_path %>
-          </div>
-        </div>
-
-        <!-- off-canvas left menu -->
-        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas style="background-color: rgb(100,77,82);height:100%;position:fixed;">
-          <ul class="vertical dropdown menu" data-dropdown-menu>
-            
-            <li><a href="#">Sobre</a></li>
-            <li><a data-open="emailform">Inscreva-se</a></li>
-          </ul>
-        </div>
-
-        <!-- "wider" top-bar menu for 'medium' and up -->
-        <div class="top-bar" id="widemenu">
-          <div class="top-bar-left">
-            <ul class="menu">
-              <li><i class="fa fa-link fa-3x"></i></li>
-              <li><%= link_to 'Mentanina', welcome_index_path %></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a data-open="emailform">Inscreva-se</a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-
-        <!-- original content goes in this container -->
-        <div class="off-canvas-content" data-off-canvas-content style="background-color: transparent">
-          <!--Yield renders the view of the page-->
-          <%= yield %>
-        </div>
-
-      
-        <!--Footer callout-->
-        <div class="callout primary" id="callout-footer">
-          <br>
-        </div>
-        <div class="callout large success" style="height: 40%" id="callout-footer">
-          <div style="position:absolute;bottom:0">
-          feito por mim
-          </div>
-        </div>
-
-        <!--Smooth scrolling script. Add smooth class to link to apply it-->
-        <script>
-        $(function() {
-          $('a[href*="#"].smooth:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 500);
-                return false;
-              }
-            }
-          });
-        });
-        </script>
-
+    <!--Footer callout-->
+    <div class="callout primary" id="callout-footer">
+      <br>
+    </div>
+    <div class="callout large success" style="height: 40%" id="callout-footer">
+      <div style="position:absolute;bottom:0">
+      feito por mim
       </div>
     </div>
+
+    <!--Smooth scrolling script. Add smooth class to link to apply it-->
+    <script>
+    $(function() {
+      $('a[href*="#"].smooth:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
 
   </body>
 </html>
