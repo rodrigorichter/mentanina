@@ -34,7 +34,7 @@ This project is being developed with the contribution of the following people:
 * [Rodrigo Richter](http://inf.ufrgs.br/~rrrichter)
 * Valentina Osório
 
-Please feel free to contribute in any way you want. You can fork us or leave feedback opening a new Issue.
+Please feel free to contribute in any way you want. You can fork us or leave feedback by opening a new Issue.
 
 How to submit a pull request:
 
