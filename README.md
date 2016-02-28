@@ -37,14 +37,11 @@ This project is being developed with the contribution of the following people:
 Please feel free to contribute in any way you want. You can fork us or leave feedback opening a new Issue.
 
 How to submit a pull request:
-1. Fork it!
+1. Fork It!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-1. teste
-2. hehe
 
 ## License
 
