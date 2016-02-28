@@ -43,6 +43,9 @@ How to submit a pull request:
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+1. teste
+2. hehe
+
 ## License
 
 The app is released under the [MIT license](https://github.com/rrrichter/mentanina/blob/master/LICENSE.txt).
