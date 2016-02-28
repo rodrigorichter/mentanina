@@ -101,15 +101,15 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
+    'h1': 56,
+    'h2': 25,
     'h3': 19,
     'h4': 18,
     'h5': 17,
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
+    'h1': 72,
     'h2': 40,
     'h3': 31,
     'h4': 25,
@@ -492,7 +492,7 @@ $show-header-for-stacked: false;
 // 31. Tabs
 // --------
 
-$tab-margin: 1rem;
+$tab-margin: 0.1rem;
 $tab-background: $warning-color;
 $tab-background-active: $success-color;
 $tab-border: $light-gray;

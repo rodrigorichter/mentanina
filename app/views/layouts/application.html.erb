@@ -19,10 +19,10 @@
       <div style="text-align:center">
         <ul class="vertical menu" data-accordion-menu>
           <li>
-            <a href="#" style="font-size:40px;color:white"><i class="fa fa-bars"></i></a>
-            <ul class="menu vertical" style="font-size: 18px;color:white"><br>
-              <li><a href="/welcome/index">Mentanina</a></li><br>
-              <li><a href="#">Item 1B</a></li><br>
+            <a href="#" style="font-size:30px;color:white"><i class="fa fa-bars"></i></a>
+            <ul class="menu vertical" style="font-size: 14px;color:white"><br>
+              <li><a href="/welcome/index" style="color:white">Mentanina</a></li><br>
+              <li><a href="#" style="color:white">Item 1B</a></li><br>
             </ul>
           </li>
       </ul>
@@ -54,19 +54,44 @@
         <h1>se inscrevaaa</h1>
     </div>
 
-    <!--Background-->
-    <div data-interchange="[/images/bg_small.html, small], [/images/bg_small.html, medium], [/videos/bg_large.html, large]"></div>
-
     <!--Renders the view-->
     <%= yield %>
 
     <!--Footer callout-->
-    <div class="callout primary" id="callout-footer">
-      <br>
-    </div>
-    <div class="callout large success" style="height: 40%" id="callout-footer">
-      <div style="position:absolute;bottom:0">
-      feito por mim
+    <div class="callout large primary" style="color:white" id="callout-footer">
+      <div class="row">
+        <div class="small-12 small-centered columns">
+          <table class="stack">
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="menu">
+                    <li><i class="fa fa-link fa-2x">&nbsp;</i></li>
+                    <li>Mentanina</li>
+                  </ul>
+                </td>
+                <td>
+                  Email: contatomentanina@yahoo.com.br
+                </td>
+                <td>
+                  Telefone: 51 - 8145 3551
+                </td>
+                <td>
+                  <a href="facebook.com/pagina"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;
+                  <a href="https://github.com/rrrichter/mentanina"><i class="fa fa-github-square fa-3x"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  feito em Ruby on Rails e Foundation.
+                </td>
+                <td>
+                  <a href="https://github.com/rrrichter/mentanina/blob/master/LICENSE.txt">A Mentanina utiliza a licensa do MIT</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
