@@ -33,6 +33,7 @@ Before deploying to heroku, type `RAILS_ENV=production rake assets:precompile` t
 This project is being developed with the contribution of the following people:
 * [Rodrigo Richter](http://inf.ufrgs.br/~rrrichter)
 * Valentina Osório
+* Daniel Castro
 
 Please feel free to contribute in any way you want. You can fork us or leave feedback by opening a new Issue.
 
