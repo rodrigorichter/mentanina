@@ -79,7 +79,7 @@ Rails.application.configure do
 
   # CUSTOM SETTINGS
 
-  config.action_controller.asset_host = 'stormy-hamlet-97195.herokuapp.com'
+  config.action_controller.asset_host = 'mentanina.herokuapp.com'
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
