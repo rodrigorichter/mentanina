@@ -1,18 +1,18 @@
-# [Mentanina](http://www.mentanina.com.br)
+# [Bateu a Bad](http://www.bateuabad.com.br)
 
 ## Description
 
-Mentanina is a web application made on Ruby On Rails and Foundation. It aggregates links about mental health and enables anyone to share his/her own story.
+Bateu a Bad is a web application made on Ruby On Rails and Foundation. It aggregates links about mental health and enables anyone to share his/her own story.
 
 ## Motivation
 
-The app was founded when I(the founder) decided that I could and should do something to help people suffering from mental illnesses. The motivation for it started when I encountered deppresion myself, and was further increased by people whom I met who had bipolar disorder, and by a recent suicide case of a woman studying at Universidade Federal do Rio Grande do Sul(UFRGS).
+Mental health is a very important subject that influences every aspect of our civilization, and yet, it is almost never talked about. Why?
 
 ## Installation
 
 **Pre-installation(for newbies)**
 * Install git: `sudo apt-get install git`
-* Clone the repo: create a folder named whatever you like and type `git clone git@github.com:rrrichter/mentanina.git`
+* Clone the repo: create a folder named whatever you like and type `git clone git@github.com:rrrichter/bateuabad.git`
 
 **Installation**
 * [Install Ruby on Rails with rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04). Note that you have to configure your own environment variables.
